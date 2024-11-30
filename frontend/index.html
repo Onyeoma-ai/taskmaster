@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="png" href="T.png" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="knowledge.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="login.html">login</a>
+      <a href="register.html">Register</a>
+      <h1>Task Manager</h1>
+      <div class="">
+        <ul id="taskList"></ul>
+      </div>
+      <div class="">
+        <div class="task-input">
+          <input type="text" id="taskName" placeholder="Task Name" />
+          <input
+            type="text"
+            id="taskDescription"
+            placeholder="Task Description"
+          />
+          <input type="date" id="taskDueDate" />
+          <select id="taskPriority">
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+          </select>
+          <button onclick="addTask()">Add Task</button>
+        </div>
+      </div>
+      <br />
+    </div>
+    <script src="knowledge.js"></script>
+  </body>
+</html>
